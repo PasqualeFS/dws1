@@ -1,0 +1,135 @@
+/* Stylesheet for Pasquale Palazzolo's Week 2 DWA1 Assignment */
+
+/* CSS Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* Global Styles */
+body {
+    background-color: #000001;
+    width:100%;
+    font-size: 100%
+}
+
+a:link {
+    -moz-linear-gradient(18% 93% 270deg,#8F1D4A, #631433)
+    -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8F1D4A), to(#631433))
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+a:active {
+
+}
+
+
+a:visited,  {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Copse', serif;
+    text-shadow: 3px 3px 3px #5F5F5F;
+}
+
+li {
+    list-style-type: square;
+}
+
+
+p, blockquote, abbr, cite, ol, ul, li, figcaption, figure {
+    font-family: 'Comfortaa', cursive;
+    line-height: 22px;
+    font-style: normal;
+}
+
+p {
+    margin-top: 12px;
+    text-indent: 12px;
+}
+
+
+/* Navigation Styles */
+nav {
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+#container {
+    background-color: #ffffff;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#innercontainer p {
+    padding: 0 30px;
+}
+
+.indentItems {
+    margin-left: 24px;
+}
+
+h1.mainTitle {
+    color: #000001;
+    font-size: 200%;
+    padding: 12px 12px 12px 0;
+}
+
+h2.sectionSubtitle {
+    color: #000001;
+    font-size: 150%;
+    margin: 18px 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #ff0000;
+    box-shadow: 0 2px 4px #000000;
+    text-indent: 12px;
+}
+
+.menuSection {
+    list-style: none;
+    margin-top:22px;
+}
+
+.menuSection span {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+.opaqueHeader {
+    background-color: #ff0000;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.quote {
+    font-style: italic;
+}
