@@ -50,6 +50,7 @@ p, blockquote, abbr, cite, ol, ul, li, figcaption, figure {
 
 p {
     margin-top: 12px;
+    padding: 0 20px;
     text-indent: 12px;
 }
 
@@ -187,6 +188,7 @@ h2.sectionSubtitle {
     width: 100%;
     color: #000000;
     background-color: #556b2f;
-    padding: 2px;
+    padding: 2px 0;
     margin-bottom: 4px;
+    text-indent: 12px;
 }
