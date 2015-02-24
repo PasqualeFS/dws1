@@ -66,6 +66,10 @@ p {
     text-indent: 12px;
 }
 
+footer {
+	clear: both;
+}
+
 
 /*----- Navigation Styles -----*/
 nav {
@@ -206,9 +210,13 @@ h2.sectionSubtitle {
 
 /*----- Table Styles -----*/
 #menuTable {
+	font-family: 'Copse', serif;
+	font-size: 1em;
 	margin: 0 auto;
 	width: 90%;
+	border-spacing: 5px;
 }
+
 
 .firstRow td:nth-child(1), .firstRow td nth-child(2), 
 .secondRow td:nth-child(1), .secondRow td nth-child(2),
@@ -226,7 +234,95 @@ h2.sectionSubtitle {
 	text-align: right;
 }
 
+th {
+	text-transform: uppercase;
+	padding-top: 12px;
+	border-bottom: 1px solid #000001;
+	letter-spacing: 1.10em;
+}
+
+tr:hover.firstRow,
+tr:hover.secondRow,
+tr:hover.thirdRow {
+	background-color: #D5D5D5;
+}
+
 /*----- Form Styles -----*/
+
+#bestway {
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+
+#emailSubscribe {
+	margin: 0 auto;
+	padding: 18px 0 18px 24px;	
+}
+
+#mediaChoice {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#subscribe {
+	width: 100%;
+}
+
+.formFloatRt {
+	float: right;
+	margin: 40px 40px 0 0;
+	max-width: 100%;	
+}
+
+input {
+	font-family: 'Copse', serif;
+	border-radius: 4px;
+}
+
+input.nameField {
+	color: #ffffff;
+	padding-left: 4px;
+	font-size: 1em;
+	width: 250px;
+	height: 22px;
+	margin-bottom: 10px;
+	background: url("../images/InputField_bg.jpg") repeat-x top left;
+}
+
+input.submitBtn {
+	font-family: 'Copse', serif;
+	font-size: 1.15em;
+	width: 200px;
+	height: 32px;
+	margin-top: 12px;
+	
+}
+
+input.submitBtn:hover {
+	color:#ffffff;
+	background-color: #F4B4B4;
+	
+}
+
+input.submitBtn:focus {
+	color:#A95A23;	
+}
+
+label {
+	font-family: 'Copse', serif;
+	font-size: 1em;
+}
+
+select.formSelect {
+	width: 200px;
+	height: 22px;
+	
+}
+
+.selectLabel, .formSelect {
+	font-family: 'Copse', serif;
+	font-size; 1em;
+}
 
 
 /*----- Fluid Styles -----*/

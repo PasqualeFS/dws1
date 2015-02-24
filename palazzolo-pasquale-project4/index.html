@@ -143,34 +143,38 @@
 				<article id="subscribe">
 					<h2 class="sectionSubtitle">Subscribe</h2>
 					<p>Want to get the latest updates about Pasquale's or receive exclusive email discounts? Sign up for our e-newsletter and start enjoying the benefits today!</p>
+					<img src="images/email.jpg" class="formFloatRt" />
 					<form action="http://example.com/join.php" id="emailSubscribe">
 						<label for="firstName">First Name:</label><br/>
-						<input type="text" name="firstName" /><br/>
+						<input type="text" name="firstName" class="nameField" placeholder="First Name" required /><br/>
 						<label for="lastName">Last Name:</label><br/>
-						<input type="text" name="lastName" />
+						<input type="text" name="lastName" class="nameField" placeholder="Last Name" />
 						<br/>
 						<label for="email">Email:</label><br/>
-						<input type="text" name="email" /><br/>
-						<label for="bestWay">What is the best way to contact you?</label>
-						<br/>
-						<input id="callMe" type="radio" name="bestWay" value="Ph" />
-						<label for="callMe">Call Me</label>
-						<input id="textMe" type="radio" name="bestWay" value="Ph" />
-						<label for="textMe">Text Me</label>
-						<input id="emailMe" type="radio" name="bestWay" value="Ph" />
-						<label for="emailme">Email Me</label>
+						<input type="text" name="email" class="nameField" placeholder="example@example.com"required /><br/>
+						<fieldset id="bestWay">
+							<label for="bestWay">What is the best way to contact you?</label>
+							<br/>
+							<input id="callMe" type="radio" name="bestWay" value="Ph" />
+							<label for="callMe">Call Me</label>
+							<input id="textMe" type="radio" name="bestWay" value="Ph" />
+							<label for="textMe">Text Me</label>
+							<input id="emailMe" type="radio" name="bestWay" value="Ph" />
+							<label for="emailme">Email Me</label>
+						</fieldset>
 						
-						<br/>
-						<label for="media">How did you hear about us?</label><br/>
-						<select name="media">
-							<option value="choose">Please Choose One</option>
-							<option value="newspaper">Newspaper</option>
-							<option value="radio">Radio</option>
-							<option value="tv">Television</option>
-							<option value="internet">Internet</option>
-							<option value="other">Other</option>
-						</select><br/>
-						<input type="submit" value="subscribe" />						
+						<fieldset id="mediaChoice">
+							<label for="media" class="selectLabel">How did you hear about us?</label><br/>
+							<select name="media" class="formSelect">
+								<option value="choose">Please Choose One</option>
+								<option value="newspaper">Newspaper</option>
+								<option value="radio">Radio</option>
+								<option value="tv">Television</option>
+								<option value="internet">Internet</option>
+								<option value="other">Other</option>
+							</select><br/>
+						</fieldset>
+						<input type="submit" value="Sign Me Up" class="submitBtn" />						
 					</form>
 					
 				</article>
@@ -178,11 +182,12 @@
 
 				
 				
-				
+				<!-- BEGIN FOOTER SECTION -->
 				<footer>
 					<p class="disclaimer">All images are courtesy of <a href="http://www.freeimages.com">FreeImages.com</a>. These are free stock photos offered for public use.</p>
 					<br/>
 				</footer>
+				<!-- END FOOTER SECTION -->
 			</div>
 			<!-- END INNER CONTAINER -->
 
