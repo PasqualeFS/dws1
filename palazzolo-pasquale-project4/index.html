@@ -13,24 +13,25 @@
 		<!-- BEGIN OUTER CONTAINER -->
 		<div id="container">
 
-				<!-- BEGIN HEADER -->
-				<div id="header">
-					<div id="logoTitle">
-						<h1 class="mainTitle">Pasquale's Ristorante Siciliano</h1>
-						<blockquote class="quote">Abbandonati all'amore e alla cucina!</blockquote>
-					</div>
-
-					<!-- Start Navigation -->
-					<nav id="navigation">
-						<ul>
-							<li><a href="#story">Storia</a></li>
-							<li><a href="#menu">Menu</a></li>
-							<li><a href="#photos">Photos</a></li>
-						</ul>
-					</nav>
-					<!-- End Navigation -->
+			<!-- BEGIN HEADER -->
+			<header>
+				<div id="logoTitle">
+					<h1 class="mainTitle">Pasquale's Ristorante Siciliano</h1>
+					<blockquote class="quote">Abbandonati all'amore e alla cucina!</blockquote>
 				</div>
-				<!-- END HEADER -->
+
+				<!-- Start Navigation -->
+				<nav id="navigation">
+					<ul>
+						<li><a href="#story">Storia</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#photos">Photos</a></li>
+						<li><a href="#subscribe">E-Newsletter</a></li>
+					</ul>
+				</nav>
+				<!-- End Navigation -->
+			</header>
+			<!-- END HEADER -->
 
 			<!-- BEGIN INNER CONTAINER -->
 			<div id="innerContainer">
@@ -44,7 +45,7 @@
 
 
 				<!-- BEGIN FAMILY HISTORY -->
-				<div id="story">
+				<article id="story">
 					<h2 class="sectionSubtitle">Storia a La Famiglia</h2>
 					<p>We came to America on the boat (well...almost). Truth is that grandpa jumped ship a mile out from Ellis and swam ashore making a name for himself as one of New York's barbers. He cut hair in the town by day and then he put on a suit after dinner each night, grabbed his <q><strong>good</strong></q> barber's tools and went out and cut hair privately for the...shall we say...made men.</p>
 
@@ -53,52 +54,11 @@
 					<p>Two decades have passed since Agostina went home to heaven but her legacy lives on in the food we make here at Pasquale's. We have not sacrificed quality ingredients, quantity or time.  The food that sits before you on your plate was made with the same love, dedication and sweat that grandma and grandpa spent to keep our family together. So fill your stomachs and when you think you can't handle another bite, listen quietly and you may hear grandma yell <q>Mangia</q> to you.</p>
 
 					<p>From our family to yours, we hope you enjoy. We hope you return for more.</p>
-				</div>
+				</article>
 				<!-- END FAMILY HISTORY -->
-
-
-
-				<!-- START MENU SECTION -->
-				<div id="menu">
-					<h2 class="sectionSubtitle">Our Menu</h2>
 				
-					<ol>
-						<li class="menuSection"><span class="">Primo</span><br/>
-							<ul class="indentItems">
-								<li>Calamari Fritti</li>
-								<li>Mama's Meatballs</li>
-								<li>Pasquale's Spicy Sausage</li>
-								<li>Italian Wedding Soup</li>
-								<li>Stuffed Artichokes</li>
-							</ul>
-						</li>
-						<li class="menuSection"><span class="">Secondo</span>
-							<ul class="indentItems">
-								<li>Linguine with Clams</li>
-								<li>Barbara's Pink Farfalle</li>
-								<li>Agostina's Bracciole</li>
-								<li>Joe's Fettucine with Cream, Peas and Prosciutto</li>
-								<li>Brasi's Drunken Seven Fishes</li>
-							</ul>
-						</li>
-						<li class="menuSection"><span class="">La Dolce Vita</span>
-							<ul class="indentItems">
-								<li>Clemenza's Cannoli (<em><q>Leave the Gun, Take the Cannoli!</q></em>)</li>
-								<li>Aunt Fannie's Wine Nut Balls</li>
-								<li>Ricotta Pie</li>
-								<li>Riley's Mambo Italiano</li>
-								<li>Espresso</li>
-								<li>Sambucca</li>
-							</ul>
-						</li>
-					</ol>
-				</div>
-				<!-- END MENU SECTION -->
-
-
-
 				<!-- START PHOTOS SECTION -->
-				<div id="photos">
+				<aside id="photos">
 					<h2 class="sectionSubtitle">Photos</h2>
 				
 					<h3>Seeing is Believing</h3>
@@ -133,11 +93,96 @@
 						</figure>
 						</li>
 					</ul>
-				</div>
+				</aside>
 				<!-- END PHOTOS SECTION -->
 
-				<p class="disclaimer">All images are courtesy of <a href="http://www.freeimages.com">FreeImages.com</a>. These are free stock photos offered for public use.</p>
-				<br/>
+
+
+				<!-- START MENU SECTION -->
+				<article id="menu">
+					<h2 class="sectionSubtitle">Our Menu</h2>
+					<table id="menuTable">
+						<tbody>
+							<tr>
+								<th colspan="5" scope="column">Primo</th>
+							</tr>
+							<tr class="firstRow">
+								<td>Calamari Fritti</td>
+								<td>Mama's Meatballs</td>
+								<td>Pasquale's Spicy Sausage</td>
+								<td>Italian Wedding Soup</td>
+								<td>Stuffed Artichokes</td>
+							</tr>
+						
+							<tr>
+								<th colspan="5" scope="column">Secondo</th>
+							</tr>
+							<tr class="secondRow">
+								<td>Linguine with Clams</td>
+								<td>Barbara's Pink Farfalle</td>
+								<td>Agostina's Bracciole</td>
+								<td>Joe's Fettucine	</td>
+								<td>Brasi's Sleepy Fish</td>
+							</tr>
+							<tr>
+								<th colspan="5" scope="column">La Dolce Vita</th>
+							</tr>
+							<tr class="thirdRow">
+								<td>Clemenza's Cannoli</td>
+								<td>Aunt Fannie's Wine Nut Balls</td>
+								<td>Ricotta Pie</td>
+								<td>Riley's Mambo Italiano</td>
+								<td>Espresso con Sambucca</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<!-- END MENU SECTION -->
+
+				<!-- BEGIN FORM SECTION -->
+				<article id="subscribe">
+					<h2 class="sectionSubtitle">Subscribe</h2>
+					<p>Want to get the latest updates about Pasquale's or receive exclusive email discounts? Sign up for our e-newsletter and start enjoying the benefits today!</p>
+					<form action="http://example.com/join.php" id="emailSubscribe">
+						<label for="firstName">First Name:</label><br/>
+						<input type="text" name="firstName" /><br/>
+						<label for="lastName">Last Name:</label><br/>
+						<input type="text" name="lastName" />
+						<br/>
+						<label for="email">Email:</label><br/>
+						<input type="text" name="email" /><br/>
+						<label for="bestWay">What is the best way to contact you?</label>
+						<br/>
+						<input id="callMe" type="radio" name="bestWay" value="Ph" />
+						<label for="callMe">Call Me</label>
+						<input id="textMe" type="radio" name="bestWay" value="Ph" />
+						<label for="textMe">Text Me</label>
+						<input id="emailMe" type="radio" name="bestWay" value="Ph" />
+						<label for="emailme">Email Me</label>
+						
+						<br/>
+						<label for="media">How did you hear about us?</label><br/>
+						<select name="media">
+							<option value="choose">Please Choose One</option>
+							<option value="newspaper">Newspaper</option>
+							<option value="radio">Radio</option>
+							<option value="tv">Television</option>
+							<option value="internet">Internet</option>
+							<option value="other">Other</option>
+						</select><br/>
+						<input type="submit" value="subscribe" />						
+					</form>
+					
+				</article>
+				<!-- END FORM SECTION -->
+
+				
+				
+				
+				<footer>
+					<p class="disclaimer">All images are courtesy of <a href="http://www.freeimages.com">FreeImages.com</a>. These are free stock photos offered for public use.</p>
+					<br/>
+				</footer>
 			</div>
 			<!-- END INNER CONTAINER -->
 

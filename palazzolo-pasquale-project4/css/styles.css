@@ -41,6 +41,7 @@ body {
 
 figcaption {
     margin-bottom: 14px;
+    font-size: 8px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,13 +120,11 @@ nav li {
     padding: 0 30px;
 }
 
-#photos, #menu {
-    margin-left:30px;
-}
-
 #photos img {
     opacity: 0.5;
     display: inline;
+    width: 130px;
+    height: 130px;
 }
 
 #photos img:hover {
@@ -193,6 +192,7 @@ h2.sectionSubtitle {
 
 .photoList li {
     display: inline-block;
+    margin-left: 14px;
 }
 .quote {
     font-style: italic;
@@ -204,7 +204,32 @@ h2.sectionSubtitle {
     text-indent: 12px;
 }
 
-/*----- Fluid Styles ----- */
+/*----- Table Styles -----*/
+#menuTable {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.firstRow td:nth-child(1), .firstRow td nth-child(2), 
+.secondRow td:nth-child(1), .secondRow td nth-child(2),
+.thirdRow td:nth-child(1), .thirdRow td nth-child(2) {
+	text-align: left;
+}
+
+.firstRow td:nth-child(3), .secondRow td:nth-child(3), .thirdRow td:nth-child(3) {
+	text-align: center;
+}
+
+.firstRow td:nth-child(4), .firstRow td:nth-child(5),
+.secondRow td:nth-child(4), .secondRow td:nth-child(5),
+.thirdRow td:nth-child(4), .thirdRow td:nth-child(5) {
+	text-align: right;
+}
+
+/*----- Form Styles -----*/
+
+
+/*----- Fluid Styles -----*/
 
 #story {
 	float: left;
@@ -213,14 +238,14 @@ h2.sectionSubtitle {
 }
 
 #menu {
-	float: right;
-	width: 30%;
+	clear: both;
+	padding-top:22px;
 	
 }
 
 #photos {
-	clear: both;
-	padding-top:22px;
-}
+	float: right;
+	width: 30%;
+	}
 
 	
